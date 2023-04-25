@@ -4,41 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maps</title>
+    <title>Semama4.1</title>
     <style>
       * {
+        font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
       }
-      body {
-        background-color: #000;
+      .mensaje {
+        width: 400px;
+        margin: 0  auto;
+        background-color: #569daa;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border: 3px solid #577d86;
       }
-      img {
-        width: 1000px;
-        height: 600px;
+      .caja {
+        background-color: #569daa;
+        height: 40px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-right: 3px solid #577d86;
+        border-bottom: 3px solid #577d86;
+        margin: 0 auto;
       }
-      .map {
-        background-color: aqua;
+      .caja-bordes {
+        background-color: #569daa;
+        height: 40px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-top: 3px solid #577d86;
+        border-bottom: 3px solid #577d86;
+        margin: 0 auto;
+        border-radius: 10px;
       }
     </style>
   </head>
   <body>
-    <img src="./img/encabezado.jpg" alt="Encabezado" usemap="#map_encabezado" />
-    <map name="map_encabezado">
-      <area shape="circle" coords="940,50,18" href="#" alt="" />
-      <area shape="circle" coords="895,50,18" href="#" alt="" />
-      <area shape="circle" coords="845,50,18" href="#" alt="" />
-      <area shape="rect" coords="355,30,435,70" href="#" alt="" />
-      <area shape="rect" coords="455,30,535,70" href="#" alt="" />
-      <area shape="rect" coords="560,30,660,70" href="#" alt="" />
-      <area shape="poly" coords="100,20,150,70,50,70" href="#" alt="" />
-      <area
-        shape="poly"
-        coords="140,470,210,470,260,520,230,580,170,520,120,580,80,520"
-        href="#"
-        alt=""
-      />
-    </map>
+    <br>
+    <div id="mensaje" class="mensaje">
+      <h4>Hola como estas soy Bryan, estoy probando CSS3</h4>
+    </div>
+    <br />
+    <div id="mensaje" class="caja">
+      <h4>Hola como estas soy Bryan, estoy probando CSS3</h4>
+    </div>
+    <br>
+    <div id="mensaje" class="caja-bordes">
+      <h4>Hola como estas soy Bryan, estoy probando CSS3</h4>
+    </div>
   </body>
 </html>
