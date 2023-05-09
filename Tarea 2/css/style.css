@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg_body {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+}
+
+.navbar {
+  width: 100%;
+  height: 40px;
+  background-color: #cde7ff;
+  border: #91caff solid 1px;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #cde7ff;
+  border: #91caff solid 1px;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+}
+.header img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.body {
+  width: 100%;
+  height: 350px;
+  background-color: #cde7ff;
+  border: #91caff solid 1px;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.menu {
+  width: 30%;
+  background-color: #91caff;
+  border: 2px solid #65b5ff;
+  height: 100%;
+  border-radius: 10px;
+}
+.contenido {
+  width: 70%;
+  border: 2px solid #65b5ff;
+  background-color: #91caff;
+  height: 100%;
+  border-radius: 10px;
+}
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: #cde7ff;
+  border: #91caff solid 1px;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+}
