@@ -13,14 +13,41 @@
   </head>
   <body>
     <nav class="menu">
-      <div class="container_logo"><img src="./img/meta-logo.png" alt="" /></div>
-      <ul>
-        <li><i class="bi bi-house"></i>Home</li>
-        <li><i class="bi bi-gear"></i>Services</li>
-        <li><i class="bi bi-grid-3x3-gap"></i>Galery</li>
-        <li><i class="bi bi-person"></i>Login</li>
-        <li><i class="bi bi-telephone"></i>Contact</li>
-      </ul>
+      <div>
+        <div class="container_logo">
+          <img src="./img/meta-logo.png" alt="" />
+        </div>
+        <ul>
+          <li class="activate"><i class="bi bi-house"></i>Home</li>
+          <li>
+            <i class="bi bi-gear"></i
+            ><a href="#" onclick="mostrar_menu()">Services</a>
+          </li>
+          <li><i class="bi bi-grid-3x3-gap"></i>Galery</li>
+          <li><i class="bi bi-person"></i>Login</li>
+          <li><i class="bi bi-telephone"></i>Contact</li>
+        </ul>
+      </div>
+      <div class="container_logout">
+        <hr />
+        <br />
+        <div class="logout"><i class="bi bi-box-arrow-left"></i>Logout</div>
+      </div>
     </nav>
+
+    <div id="sub_services" class="sub_services">
+      <ul>
+        <li><i class="bi bi-download"></i>Descargas</li>
+        <li><i class="bi bi-camera-reels"></i>Tutoriales</li>
+        <li><i class="bi bi-speedometer2"></i>Medidor de velocidad</li>
+        <li><i class="bi bi-bookmark-star"></i>Marketing Digital</li>
+        <li><i class="bi bi-shield-check"></i>Seguidad Informatica</li>
+      </ul>
+    </div>
+    <script>
+      function mostrar_menu() {
+        document.getElementById("sub_services").style.visibility = "visible";
+      }
+    </script>
   </body>
 </html>
