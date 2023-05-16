@@ -23,7 +23,10 @@
             <i class="bi bi-gear"></i
             ><a href="#" onclick="mostrar_menu()">Services</a>
           </li>
-          <li><i class="bi bi-grid-3x3-gap"></i>Galery</li>
+          <li>
+            <i class="bi bi-grid-3x3-gap"></i
+            ><a href="#" onclick="mostrar_gallery()">Gallery</a>
+          </li>
           <li><i class="bi bi-person"></i>Login</li>
           <li><i class="bi bi-telephone"></i>Contact</li>
         </ul>
@@ -37,16 +40,56 @@
 
     <div id="sub_services" class="sub_services">
       <ul>
-        <li><i class="bi bi-download"></i>Descargas</li>
-        <li><i class="bi bi-camera-reels"></i>Tutoriales</li>
-        <li><i class="bi bi-speedometer2"></i>Medidor de velocidad</li>
-        <li><i class="bi bi-bookmark-star"></i>Marketing Digital</li>
-        <li><i class="bi bi-shield-check"></i>Seguidad Informatica</li>
+        <li>
+          <i class="bi bi-download"></i
+          ><a href="" onclick="ocultar_menu()">Descargas</a>
+        </li>
+        <li>
+          <i class="bi bi-camera-reels"></i
+          ><a href="" onclick="ocultar_menu()">Tutoriales</a>
+        </li>
+        <li>
+          <i class="bi bi-speedometer2"></i
+          ><a href="" onclick="ocultar_menu()">Medidor velocidad</a>
+        </li>
+        <li>
+          <i class="bi bi-bookmark-star"></i
+          ><a href="" onclick="ocultar_menu()">Marketing Digital</a>
+        </li>
+        <li>
+          <i class="bi bi-shield-check"></i
+          ><a href="" onclick="ocultar_menu()">Seguridad Informatica</a>
+        </li>
+      </ul>
+    </div>
+    <div id="sub_gallery" class="sub_gallery">
+      <ul>
+        <li>
+          <i class="bi bi-download"></i
+          ><a href="" onclick="ocultar_gallery()">Fotos</a>
+        </li>
+        <li>
+          <i class="bi bi-camera-reels"></i
+          ><a href="" onclick="ocultar_gallery()">Videos</a>
+        </li>
+        <li>
+          <i class="bi bi-speedometer2"></i
+          ><a href="" onclick="ocultar_gallery()">Emojis</a>
+        </li>
       </ul>
     </div>
     <script>
       function mostrar_menu() {
         document.getElementById("sub_services").style.visibility = "visible";
+      }
+      function mostrar_gallery() {
+        document.getElementById("sub_gallery").style.visibility = "visible";
+      }
+      function ocultar_gallery() {
+        document.getElementById("sub_gallery").style.visibility = "hidden";
+      }
+      function ocultar_menu() {
+        document.getElementById("sub_services").style.visibility = "hidden";
       }
     </script>
   </body>

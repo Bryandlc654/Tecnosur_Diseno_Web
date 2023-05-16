@@ -37,7 +37,7 @@
   width: 32px;
 }
 .menu li,
-.sub_services ul li {
+.sub_services ul li , .sub_gallery ul li {
   color: #fff;
   list-style: none;
   padding: 8px 25px;
@@ -45,13 +45,13 @@
 }
 .menu li i,
 .container_logout i,
-.sub_services ul li i {
+.sub_services ul li i, .sub_gallery ul li i {
   margin: 0 5px 0 0;
 }
 .menu li:hover,
 .logout,
 .activate,
-.sub_services ul li:hover {
+.sub_services ul li:hover, .sub_gallery ul li:hover {
   transition: 0.25s all;
   background-color: #303234;
 }
@@ -60,7 +60,7 @@
   padding: 8px 20px;
   border-radius: 8px;
 }
-.sub_services {
+.sub_services, .sub_gallery {
   width: 240px;
   border-radius: 0 8px 8px 0;
   padding: 20px 8px 20px 8px;
@@ -72,7 +72,7 @@
   top: 105px;
   visibility: hidden;
 }
-.sub_services ul {
+.sub_services ul, .sub_gallery ul {
   list-style: none;
 }
 
