@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu {
+  width: 200px;
+  background-color: #1a1c1e;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 8px 20px 8px;
+  justify-content: space-between;
+}
+.menu ul,
+.sub_services ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.container_logo {
+  width: 42px;
+  height: 42px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 20px 25px;
+}
+.container_logo img {
+  width: 32px;
+}
+.menu li,
+.sub_services ul li,
+.sub_gallery ul li,
+.sub_contact ul  li{
+  color: #fff;
+  list-style: none;
+  padding: 8px 25px;
+  border-radius: 8px;
+}
+.menu li i,
+.container_logout i,
+.sub_services ul li i,
+.sub_gallery ul li i,
+.sub_contact ul li i {
+  margin: 0 5px 0 0;
+}
+.menu li:hover,
+.logout,
+.activate,
+.sub_services ul li:hover,
+.sub_gallery ul li:hover,
+.sub_contact ul li:hover{
+  transition: 0.25s all;
+  background-color: #303234;
+}
+.logout {
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+.sub_services,
+.sub_gallery,
+.sub_contact {
+  width: 240px;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 8px 20px 8px;
+  background-color: #1a1c1e;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 200px;
+  top: 105px;
+  visibility: hidden;
+}
+.sub_services ul,
+.sub_gallery ul,
+.sub_contact ul{
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub_login {
+  position: absolute;
+  left: 200px;
+  top: 205px;
+  height: 9rem;
+  background-color: #1a1c1e;
+  width: 230px;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 10px 20px 10px;
+  visibility: hidden;
+}
+
+.sub_login form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sub_login form input{
+  border-radius: 7px;
+  height: 25px;
+  padding: 3px;
+}
+.sub_login form button{
+  margin: 10px 0;
+  background-color: #0080ff;
+  border: none;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.sub_contact{
+  position: absolute;
+  left: 200px;
+  top: 240px;
+  height: 7rem;
+  background-color: #1a1c1e;
+  width: 230px;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 10px 20px 10px;
+}
